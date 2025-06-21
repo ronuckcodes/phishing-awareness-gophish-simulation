@@ -17,6 +17,7 @@ This project showcases a controlled phishing simulation conducted using [GoPhish
  🛠️ Setup
 
 - Tool: GoPhish (v0.12.1)
+- used ngrok to expose local server 
 - Target: 3 students
 - Landing Page: Cloned Intranet login
 - Redirect after submission: Benign "Access Granted" page
