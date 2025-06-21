@@ -1,0 +1,132 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Opens the HTML tag and specifies the language as English -->
+<head> <!-- Starts the head section of the document -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding as UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling and responsiveness on mobile devices -->
+    <title>cyberthreats</title> <!-- Sets the title of the webpage (appears in the browser tab) -->
+    <link rel="stylesheet" href="style.css"> <!-- Links the external stylesheet for styling the page -->
+</head> <!-- Closes the head section -->
+<body> <!-- Starts the body section of the document, where the visible content will go -->
+    <header> <!-- Defines the header section of the webpage -->
+        <nav> <!-- Creates a navigation section -->
+            <a href="Index.html">Home</a> 
+            <a href="home.html">Cyberthreats</a> <!-- Creates a link to index page/cyberthreats -->
+            <a href="phishingAwareness.html">Phishing Awareness</a> <!-- Creates an empty link for the Phishing Awareness page (link not set yet) -->
+            <a href="testing.html">Testing</a> <!-- Creates a link to the testing page -->
+            <a href="about.html">About</a> <!-- Creates a link to the about page -->
+            <a href="education.html">Education</a>
+         <!-- Creates a link to the education page -->
+        </nav> <!-- Closes the navigation section -->
+    </header> <!-- Closes the header section --><!-- Closes the header section -->
+
+<div class="Ransomware"> <!-- Starts the ransonware container -->
+    <!-- list item --> <!-- This section contains the main items for the ransonware -->
+    <div class="list"> <!-- Starts the list container that holds the ransonware items -->
+        <div class="item"> <!-- Defines a single item in the carousel -->
+            <img src="image/RansomwareAttack.jpg"> <!-- Displays the image for the first carousel item -->
+            <div class="content"> <!-- Container for content related to the Ransomware Attack item -->
+                <div class="title">💻🔒 RANSOMWARE ATTACK</div> <!-- Title for the item -->
+                <div class="topic">cyberthreats</div> <!-- Topic/category of the ransomware item -->
+                <div class="des"> <!-- Description of the item -->
+                    <p><strong>Ransomware</strong> is a type of malicious software that <strong>locks or encrypts</strong> your files, rendering them unusable.
+                    The attacker then demands a ransom, usually in cryptocurrency, in exchange for the decryption key to unlock the files.</p> 
+                </div>
+                <div class="buttons"> <!-- Button container for the item -->
+                    <a href="education.html#ransomware1"> <!-- Wrap the button in an anchor tag --> <!-- (add the id of specific topic to replaxe the home.html)-->
+                        <button>SEE MORE</button> <!-- "See more" button for the item -->
+                    </a>
+                </div>                
+            </div>
+        </div>
+        <!-- Repeating the structure for additional carousel items -->
+        <div class="item">
+            <img src="image/phishing.webp">
+            <div class="content">
+                <div class="title"><span style="color: red;">🎣🚨 PHISHING ATTACK</span></div>
+                <div class="topic">Cyber Threats</div>
+                <div class="des">
+                <span style="color: white;"><p><strong>Phishing</strong> tricks you into giving up passwords, credit card info, and more. Fraudulent emails and websites look legit—stay cautious!</p>
+            </div>
+            <div class="buttons"> <!-- Button container for the item -->
+                <a href="education.html#phishing1"> <!-- Wrap the button in an anchor tag --> <!-- (add the id of specific topic to replaxe the home.html)-->
+                    <button>SEE MORE</button> <!-- "See more" button for the item -->
+                </a>>
+            </div>    
+            </div>
+        </div>
+        <div class="item">
+            <img src="image/social engineering.jpg">
+            <div class="content">
+                <div class="title">Social Engineering Attack 🧠🎭</div>
+                <div class="topic">cyberthreats</div>
+                <div class="des">
+                    <span style="color: white"><p><strong>Social engineering</strong> uses manipulation to get you to share confidential info. A hacker might pose as a 
+                        <strong>colleague</strong> or <strong>authority</strong> to exploit your trust and steal sensitive details.</p></span>
+                </div>
+                <div class="buttons"> <!-- Button container for the item -->
+                <a href="education.html#social-engineering1"> <!-- Wrap the button in an anchor tag --> <!-- (add the id of specific topic to replaxe the home.html)-->
+                    <button>SEE MORE</button> <!-- "See more" button for the item -->
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="image/malware-attack.png">
+            <div class="content">
+                <div class="title">MALWARE ATTACK 🦠⚠️</div>
+                <div class="topic">cyberthreats</div>
+                <div class="des">
+                    <p><strong>Malware</strong> is harmful software that infects your device, stealing data or damaging systems. It can spread through 
+                        infected <strong>downloads</strong> or malicious websites, silently taking control of your device.</p>
+                </div>
+                <div class="buttons"> <!-- Button container for the item -->
+                <a href="education.html#malware1"> <!-- Wrap the button in an anchor tag --> <!-- (add the id of specific topic to replaxe the home.html)-->
+                    <button>SEE MORE</button> <!-- "See more" button for the item -->
+                </a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Closes the list container for the carousel -->
+    
+    <!-- list thumbnail --> <!-- This section contains the thumbnail items for the carousel -->
+    <div class="thumbnail"> <!-- Starts the thumbnail container -->
+        <div class="item"> <!-- Defines a single thumbnail item -->
+            <img src="image/RansomwareAttack.jpg"> <!-- Displays the image for the thumbnail -->
+            <div class="content"> <!-- Container for content related to the thumbnail -->
+                <div class="title">RansomwareAttack</div> <!-- Title for the thumbnail -->
+            </div>
+        </div>
+        <div class="item"> <!-- Repeating the structure for other thumbnail items -->
+            <img src="image/phishing.webp">
+            <div class="content">
+                <div class="title">Phishing Attack</div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="image/social engineering.jpg">
+            <div class="content">
+                <div class="title">Social engineering attack</div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="image/malware-attack.png">
+            <div class="content">
+                <div class="title">malware-attack</div>
+            </div>
+        </div>
+    </div> <!-- Closes the thumbnail container -->
+</div> <!-- Closes the ransomware container -->
+
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

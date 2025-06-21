@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    color: #eee;
+    margin-right: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 100%, #2a5298 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.threat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.threat-card:hover {
+    transform: translateY(-5px);
+}
+
+.threat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.threat-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.example-box {
+    background: #f8f9fa;
+    border-left: 4px solid #2a5298;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.warning-signs {
+    background: #fff3cd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.prevention-tips {
+    background: #d1e7dd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.image-container {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.example-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2a5298;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+li::before {
+    content: "→";
+    color: #2a5298;
+    position: absolute;
+    left: -1.5rem;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.stat-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a5298;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #2a5298;
+}
+.example-box {
+    background: #f7f9fc;
+    padding: 1.5rem;
+    border-left: 4px solid #3498db;
+    margin: 1rem 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.warning-box {
+    background: #fff3cd;
+    padding: 1.5rem;
+    border-left: 4px solid #ffc107;
+    margin: 1rem 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.impact-box {
+    background: #f8d7da;
+    padding: 1.5rem;
+    border-left: 4px solid #dc3545;
+    margin: 1rem 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.prevention-box {
+    background: #d1e7dd;
+    padding: 1.5rem;
+    border-left: 4px solid #198754;
+    margin: 1rem 0;
+    border-radius: 0 5px 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+ul li::before {
+    content: "→";
+    color: #3498db;
+    position: absolute;
+    left: -1.5rem;
+}
+
+.image-container {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.example-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Add new navbar styles */
+nav {
+    background-color: #328ad1;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* Adjust header to account for fixed navbar */
+header {
+    margin-top: 60px;
+    background: linear-gradient(135deg, #328ad1 100%, #328ad1 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}

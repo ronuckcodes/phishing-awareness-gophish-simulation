@@ -1,0 +1,336 @@
+/* General Styles */
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set default font to Arial */
+    line-height: 1.6; /* Set line height for better readability */
+    background-color: #f4f4f4; /* Set a light background color for the page */
+    color: #333; /* Set a dark gray color for text */
+}
+
+ul {
+    list-style: none; /* Remove default list styling (bullets) */
+    padding: 0; /* Remove padding */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent elements */
+}
+
+h1, h2 {
+    color: #2a3d56; /* Set a blue-gray color for h1 and h2 headings */
+}
+
+h3 {
+    color: #333; /* Set a darker color for h3 headings */
+}
+
+/* Background */
+.background {
+    background-color: #e7e7e7; /* Set a light gray background for the body */
+}
+
+/* Navigation Bar - Enhanced */
+nav {
+    background-color: rgba(42, 61, 86, 0.9); /* Semi-transparent background */
+    padding: 1rem;
+    position: fixed; /* Fixed position at top */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav:hover {
+    background-color: rgba(42, 61, 86, 1);
+}
+
+nav ul {
+    display: flex; /* Use flexbox to layout the navigation items horizontally */
+    justify-content: center; /* Center the navigation items */
+    gap: 1rem; /* Add spacing between navigation items */
+}
+
+nav ul li {
+    margin: 0; /* Remove margin from navigation list items */
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+    padding: 2rem; /* Add padding inside sections */
+    max-width: 1200px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center the section on the page */
+    background-color: #fff; /* Set a white background color for the section */
+    margin-bottom: 2rem; /* Add space below each section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a lifted effect */
+}
+
+.threat-card, .education-section, .quiz-container, .email-scenario {
+    margin-bottom: 1.5rem; /* Add space between individual cards */
+    padding: 1.5rem; /* Add padding inside the cards */
+    background-color: #fafafa; /* Set a light gray background color for the cards */
+    border-radius: 8px; /* Round the corners of the cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a lifted effect */
+}
+
+.threat-card h2, .education-section h2 {
+    font-size: 1.5rem; /* Set a larger font size for subheadings inside the cards */
+    margin-bottom: 1rem; /* Add space below the subheadings */
+}
+
+/* Buttons */
+button {
+    padding: 0.5rem 1rem; /* Add padding inside buttons */
+    font-size: 1rem; /* Set the font size of the button text */
+    background-color: #2a3d56; /* Set a dark blue-gray background color for buttons */
+    color: #fff; /* Set white color for the button text */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Round the corners of the button */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect for background color */
+}
+
+button:hover {
+    background-color: #1a2b3a; /* Darken button background color when hovered over */
+}
+
+button:disabled {
+    background-color: #ccc; /* Change the background to gray when button is disabled */
+    cursor: not-allowed; /* Change the cursor to show the button is disabled */
+}
+
+.button-legitimate {
+    background-color: #4CAF50; /* Set a green background color for legitimate buttons */
+}
+
+.button-phishing {
+    background-color: #f44336; /* Set a red background color for phishing buttons */
+}
+
+button.button-legitimate:hover {
+    background-color: #45a049; /* Darken green button when hovered over */
+}
+
+button.button-phishing:hover {
+    background-color: #e53935; /* Darken red button when hovered over */
+}
+
+/* Quiz Options */
+.quiz-options label {
+    display: block; /* Display each quiz option on a new line */
+    margin-bottom: 0.5rem; /* Add space below each option */
+}
+
+.quiz-options input[type="radio"] {
+    margin-right: 0.5rem; /* Add space between the radio button and label */
+}
+
+/* Feedback and Scenario */
+.feedback {
+    margin-top: 1rem; /* Add space above the feedback text */
+    font-size: 1.1rem; /* Slightly increase font size for feedback */
+    font-weight: bold; /* Make the feedback text bold */
+}
+
+.warning-signs {
+    margin-top: 1rem; /* Add space above the warning signs section */
+    font-size: 1rem; /* Set font size for the warning signs */
+    background-color: #ffeb3b; /* Set a yellow background color for the warning signs */
+    padding: 1rem; /* Add padding inside the warning signs box */
+    border-radius: 8px; /* Round the corners of the warning signs box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for the warning box */
+}
+
+.warning-signs ul {
+    margin-left: 2rem; /* Indent the list items inside the warning signs box */
+}
+
+/* Scenario Styles */
+.email-scenario {
+    margin-bottom: 2rem; /* Add space below each email scenario */
+}
+
+.email-header {
+    font-size: 0.9rem; /* Set smaller font size for the email header */
+    color: #555; /* Set a medium gray color for the email header */
+}
+
+.email-field {
+    margin-bottom: 0.5rem; /* Add space below each email field (From, To, Subject) */
+}
+
+.email-body {
+    font-size: 1rem; /* Set a standard font size for the body of the email */
+    color: #444; /* Set a dark gray color for the email body */
+}
+
+.email-body p {
+    margin-bottom: 1rem; /* Add space between paragraphs in the email body */
+}
+
+.email-body a {
+    color: #2196F3; /* Set a blue color for links inside the email body */
+    text-decoration: underline; /* Underline the links */
+}
+
+/* Footer Section (if any) */
+footer {
+    background-color: #2a3d56; /* Set a dark blue-gray background for the footer */
+    color: #fff; /* Set white text color for the footer */
+    padding: 1rem; /* Add padding inside the footer */
+    text-align: center; /* Center-align the footer text */
+}
+
+footer a {
+    color: #fff; /* Set white color for footer links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline footer links when hovered over */
+}
+
+/* Scenario Container Styling */
+.scenario-container {
+    max-width: 800px;
+    margin: 80px auto 30px;
+    padding: 2rem;
+}
+
+.email-scenario {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.email-scenario:hover {
+    transform: translateY(-5px);
+}
+
+/* Enhanced Button Styling */
+.scenario-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.button-legitimate, .button-phishing {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-legitimate {
+    background: linear-gradient(145deg, #4CAF50, #45a049);
+    color: white;
+}
+
+.button-phishing {
+    background: linear-gradient(145deg, #f44336, #e53935);
+    color: white;
+}
+
+.button-legitimate:hover, .button-phishing:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-legitimate:active, .button-phishing:active {
+    transform: translateY(1px);
+}
+
+/* Warning Signs Enhancement */
+.warning-signs {
+    background: linear-gradient(145deg, #fff9c4, #ffeb3b);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #ffd700;
+}
+
+.warning-signs h3 {
+    color: #d32f2f;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.warning-signs ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.warning-signs ul li::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Email Styling Enhancement */
+.email-header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.email-field {
+    font-family: 'Courier New', monospace;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.email-body {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Feedback Enhancement */
+.feedback {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.feedback.correct {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.feedback.incorrect {
+    background-color: #ffcdd2;
+    color: #c62828;
+}

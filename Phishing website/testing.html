@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - Test Your Knowledge</title>
+    <link rel="stylesheet" href="testing.css">
+    <script src="testing.js"></script>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: rgba(42, 61, 86, 0.9);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        nav:hover {
+            background-color: rgba(42, 61, 86, 1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Quiz Container */
+        .quiz-section {
+            max-width: 800px;
+            margin: 80px auto 30px;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2a3d56;
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 2rem;
+        }
+
+        .quiz-question {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .quiz-options label {
+            display: block;
+            margin: 10px 0;
+            padding: 12px 15px;
+            background-color: #fff;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-options label:hover {
+            background-color: #f0f7ff;
+            border-color: #3498db;
+            transform: translateX(5px);
+        }
+
+        .quiz-options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 2rem auto;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .result {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .correct {
+            color: #2ecc71;
+            background-color: #d4edda;
+        }
+
+        .incorrect {
+            color: #e74c3c;
+            background-color: #f8d7da;
+        }
+
+        .emoji {
+            font-size: 1.5em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="home.html">Cyber Threats</a></li>
+            <li><a href="phishingAwareness.html">Phishing Awareness</a></li>
+            <li><a href="testing.html">Testing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+           
+        </ul>
+    </nav>
+
+    <div class="quiz-section">
+        <h1>Test Your Cybersecurity Knowledge</h1>
+        <div class="quiz-container">
+            <div class="quiz-question">
+                <p>1. Which of the following is a common indicator of a phishing email?</p>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q1" value="a"> Urgent request for personal information
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> Professional company logo
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> Correct spelling throughout
+                    </label>
+                </div>
+            </div>
+    
+            <div class="quiz-question">
+                <p>2. What is the primary target of social engineering attacks?</p>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q2" value="a"> Computer hardware
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> Human psychology
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> Network infrastructure
+                    </label>
+                </div>
+            </div>
+    
+            <div class="quiz-question">
+                <p>3. Which of these is a safe practice to avoid online hacking attempts?</p>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q3" value="a"> Using the same password for multiple sites
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> Regularly updating software and security patches
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> Clicking on pop-up ads from unknown sources
+                    </label>
+                </div>
+            </div>
+    
+            <div class="quiz-question">
+                <p>4. What is 'pharming' in cyber-attacks?</p>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q4" value="a"> Redirecting a website's traffic to malicious websites
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b"> Gaining unauthorized access to a device
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c"> Spamming emails with malware attachments
+                    </label>
+                </div>
+            </div>
+    
+            <button onclick="checkAnswers()">Submit Answers</button>
+        </div>
+    
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'b',
+                q4: 'a'
+            };
+
+            let score = 0;
+            let resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+
+            for (let i = 1; i <= 4; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (userAnswer) {
+                    const label = userAnswer.parentElement;
+                    if (userAnswer.value === answers[`q${i}`]) {
+                        score++;
+                        label.classList.add('correct');
+                        label.innerHTML += ' <span class="emoji">✅</span>';
+                    } else {
+                        label.classList.add('incorrect');
+                        label.innerHTML += ' <span class="emoji">❌</span>';
+                    }
+                }
+            }
+
+            let resultText = `You scored ${score}/4 `;
+            resultText += score === 4 ? '🏆 Perfect!' : 
+                         score >= 2 ? '👍 Good job!' : 
+                         '📚 Keep learning!';
+
+            resultDiv.innerHTML = resultText;
+            resultDiv.className = `result ${score >= 2 ? 'correct' : 'incorrect'}`;
+        }
+    </script>
+<!-- Phishing Scenarios Section -->
+<div class="scenario-container"> <!-- Container for phishing email scenarios -->
+    <h2>Phishing Scenarios</h2> <!-- Heading for phishing scenarios section -->
+    <p>Analyze these email scenarios and determine if they're legitimate or phishing attempts.</p> <!-- Instructions for the user -->
+
+    <div class="email-scenario" id="scenario1"> <!-- First phishing email scenario -->
+        <div class="email-header"> <!-- Header of the email scenario -->
+            <div class="email-field">From: paypal-security@paypa1.com</div> <!-- Email sender -->
+            <div class="email-field">To: customer@email.com</div> <!-- Email recipient -->
+            <div class="email-field">Subject: Urgent: Your PayPal Account Has Been Limited</div> <!-- Email subject -->
+        </div>
+        <div class="email-body"> <!-- Body of the email -->
+            <p>Dear Valued Customer,</p>
+            <br>
+            <p>We've noticed some unusual activity on your PayPal account...</p>
+            <br>
+            <p>Click here to verify your account immediately: <span style="color: blue; text-decoration: underline;">http://paypa1-secure.com/verify</span></p> <!-- Phishing link -->
+            <br>
+            <p>If you don't verify within 24 hours...</p>
+            <br>
+            <p>PayPal Security Team</p>
+        </div>
+        <div class="scenario-buttons"> <!-- Buttons for user to determine if the email is legitimate or phishing -->
+            <button class="button-legitimate" onclick="checkScenario(1, false)">Legitimate</button> <!-- Button for Legitimate -->
+            <button class="button-phishing" onclick="checkScenario(1, true)">Phishing</button> <!-- Button for Phishing -->
+        </div>
+        <div class="feedback" id="feedback1"></div> <!-- Feedback container for this scenario -->
+        <div class="warning-signs" id="warnings1"> <!-- Warning signs container for phishing email -->
+            <h3>Warning Signs:</h3> <!-- Title for warning signs -->
+            <ul> <!-- List of warning signs -->
+                <li>Suspicious sender email (paypa1.com instead of paypal.com)</li>
+                <li>Creates urgency with threat of account limitation</li>
+                <li>Suspicious link domain (paypa1-secure.com)</li>
+                <li>Generic greeting ("Valued Customer")</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="email-scenario" id="scenario2"> <!-- Second phishing email scenario -->
+        <div class="email-header"> <!-- Header of the email scenario -->
+            <div class="email-field">From: notifications@amazon.com</div> <!-- Email sender -->
+            <div class="email-field">To: customer@email.com</div> <!-- Email recipient -->
+            <div class="email-field">Subject: Your Amazon Order #123-4567890-1234567</div> <!-- Email subject -->
+        </div>
+        <div class="email-body"> <!-- Body of the email -->
+            <p>Hello,</p>
+            <br>
+            <p>Thank you for your order...</p>
+            <br>
+            <p>Order Details:</p>
+            <p>Order #123-4567890-1234567</p>
+            <p>Estimated delivery: March 15, 2024</p>
+            <br>
+            <p>View your order: <span style="color: blue; text-decoration: underline;">https://www.amazon.com/gp/css/summary/</span></p> <!-- Legitimate link -->
+        </div>
+        <div class="scenario-buttons"> <!-- Buttons for user to determine if the email is legitimate or phishing -->
+            <button class="button-legitimate" onclick="checkScenario(2, true)">Legitimate</button> <!-- Button for Legitimate -->
+            <button class="button-phishing" onclick="checkScenario(2, false)">Phishing</button> <!-- Button for Phishing -->
+        </div>
+        <div class="feedback" id="feedback2"></div> <!-- Feedback container for this scenario -->
+        <div class="warning-signs" id="warnings2"> <!-- Characteristics of legitimate email -->
+            <h3>Legitimate Email Characteristics:</h3> <!-- Title for characteristics -->
+            <ul> <!-- List of characteristics -->
+                <li>Correct sender domain (amazon.com)</li>
+                <li>Specific order number included</li>
+                <li>No urgent calls to action</li>
+                <li>Link to legitimate Amazon domain</li>
+                <li>No request for personal information</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
